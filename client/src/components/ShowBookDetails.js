@@ -11,7 +11,7 @@ function ShowBookDetails(props) {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:8082/api/books/${id}`)
+            .get(`https://cise-mern-backend-xi.vercel.app/api/books/${id}`)
             .then((res) => {
                 setBook(res.data);
             })

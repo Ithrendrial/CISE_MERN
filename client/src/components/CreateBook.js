@@ -24,7 +24,7 @@ const CreateBook = (props) => {
         e.preventDefault();
 
         axios
-            .post('https://cise-mern-neon.vercel.app/', book)
+            .post('https://cise-mern-backend-xi.vercel.app/api/books', book)
             .then((res) => {
                 setBook({
                     title: '',
