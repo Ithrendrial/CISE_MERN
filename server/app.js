@@ -14,7 +14,7 @@ connectDB();
 app.use(cors(
     {
         origin: ["https://cise-mern-frontend-theta.vercel.app"],
-        methods: ["POST", "GET"],
+        methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true
     }));
 
