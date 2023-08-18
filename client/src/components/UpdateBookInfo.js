@@ -18,7 +18,7 @@ function UpdateBookInfo(props) {
 
     useEffect(() => {
         axios
-            .get(`https://cise-mern-backend-xi.vercel.app/api/books/${id}`)
+            .get(`https://cise-mern-retry.vercel.app/api/books/${id}`)
             .then((res) => {
                 setBook({
                     title: res.data.title,
@@ -51,7 +51,7 @@ function UpdateBookInfo(props) {
         };
 
         axios
-            .put(`http://localhost:8082/api/books/${id}`, data)
+            .put(`https://cise-mern-retry.vercel.app/api/books/${id}`, data)
             .then((res) => {
                 navigate(`/show-book/${id}`);
             })
